@@ -15,7 +15,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 1. Clonez ce dépôt dans votre répertoire local :
    ```bash
-   [git clone https://github.com/votre-utilisateur/carentec-nautisme.git](https://github.com/ryquo1/Projet_Laravel.git)
+   [git clone https://github.com/votre-utilisateur/Projet_Laravel.git]()
 
 2. A Modifier
    A la fin de votre git clone, je vous invite a copier le .env.exemple en le nommant .env et de remplacer toutes les variables d'environement.
