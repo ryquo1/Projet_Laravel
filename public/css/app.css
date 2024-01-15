@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial';
+}
+
+#headerLinks {
+    position: absolute;
+    float: right;
+}
+
+#palanqueButton{
+    margin-bottom: 2%;
+}
+
+#headerLinks > a {
+    text-decoration: none;
+    color: white;
+}
+
+#logOutButton {
+    text-decoration: none;
+    color: white;
+}
+
+#logOutButton:hover{
+    cursor : pointer;
+}
+
+.hyperlink-no_style{
+    text-decoration: none;
+    color: black;
+}
+
+.hyperlink-no_style:hover{
+    text-decoration: none;
+    color: black;
+}
+
+#divesDisplayed{
+    font-size: bold;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.center_display{
+    text-align: center;
+    align-content: center;
+}
+
+.button{
+    margin-left:0.5%;
+    background-color: blue;
+    font-size: bold;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+    background-color: black;
+    color: white;
+}
+
+#logo {
+    padding: 20px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#headerLinks {
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    font-size: 1.2em;
+    color: white;
+}
+
+.center-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#logoAddMember {
+    max-width: 1em;
+    min-width: 1em;
+}
+
+.userError {
+    color:red;
+}
+
+#diveInfos {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#diveMainInfos {
+    margin: auto;
+    width: fit-content;
+    text-align: left;
+}
+
+#diveMembers {
+    margin: auto;
+    width: 50vw;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#diveMembers p {
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0;
+}
+
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    font-size: 1.5em;
+    width: fit-content;
+    margin: auto;
+}
+
+#rememberMeDiv {
+    display: none;
+}
+
+#licenceDiv, #passwordDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buttonLogIn {
+    margin: auto;
+    width: 40%;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.profilePicture {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid black;
+}
+
+#profileInfos {
+    font-size: 1.5em;
+    width: fit-content;
+}
+
+#profileCard {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.linkDisplayDives {
+    font-size: 1.2em;
+}
+
+#buttonsDive {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.2em;
+    gap: 2vh;
+}
+
+.diveForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: auto;
+    margin-top: 5vh;
+    width: fit-content;
+}
+
+
+.fieldContainer {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fieldContainer label {
+    text-align: right;
+}
+
+.diveForm button {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#goBackDives {
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+}
+
+#listMembers {
+    margin: auto;
+    margin-top: 5vh;
+}
+
+#listMembers tr, #listMembers td, #listMembers th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#listMembers td, #listMembers th {
+    padding: 10px;
+    text-align: center;
+}
+
+#listMembers th {
+    font-weight: bold;
+}
+
+.memberInGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#groupTitle {
+    text-align: center;
+    margin: 10px;
+}
+
+.groupBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: solid 1px black;
+    padding: 10px;
+    width: 30vw;
+    text-align: center;
+}
+
+#groupContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+
+.addBox {
+    margin-top: 50px;
+}
+
+#groupsSection {
+    font-size: 1.5em;
+}
+
+#bottomGroups {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: auto;
+    width: fit-content;
+    margin-top: 40px;
+}
+
+#remainingDives {
+    color: aqua;
+}
+
+.sectionAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    padding: 50px;
+    border: 2px solid black;
+}
+
+.adminContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: fit-content;
+    border-collapse: collapse;
+    grid-gap:1px;
+}
+
+.adminElement {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+    gap: 1vh;
+    box-shadow:0 0 0 1px black;
+    padding: 10px;
+}
+
+.adminElement input {
+    width: 100%;
+}
+
+.checkAdminContainer {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 5fr 1fr;
+    text-align: right;
+}
+
+.checkAdminContainer input {
+    height: 60%;
+    margin-top: 20%;
+}
+
+#allChecksAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-bottom: 3vh;
+}
+
+#adminPage {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin: auto;
+    margin-top: 3vh;
+}
+
+#reportTable {
+    margin: auto;
+    margin-top: 20px;
+}
+
+#reportTable td {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#profilModifForm {
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+    font-size: 1.2em;
+}
+
+.profilModifField {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 2vh;
+}
+
+.mainSection {
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+    font-size: 1.2em;
+}
+
+.createSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createFields {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1vw;
+    margin-bottom: 2vh;
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+}
+
+#confirm {
+    top: 40vh;
+    font-size: 1.2em;
+}
+
+#confirm div {
+    background-color: #ff8080;
+    padding: 20px;
+}
+
+#membersSection {
+    text-align: center;
+}
+
+#directorDives td, #directorDives th {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+#directorDivesSection {
+    text-align: center;
+}
+
+#firstTable {
+    border-collapse: collapse;
+    border: solid black 1px;
+    width: 1000px;
+    margin: 10px;
+}
+
+#firstTable th {
+    font-size: 2em;
+    text-align: center;
+}
+
+#secondTable {
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 10px;
+}
+
+.palanquing {
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 10px;
+}
+
+#firstTable td,
+#secondTable td,
+.palanquing td {
+    border: solid black 1px;
+    padding: 3px;
+}
+
+.palanquing thead {
+    background-color: #b5b2b2;
+}
+
+.palanquing th {
+    text-align: left;
+}
+
+#safetySheet {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerText {
+    font-size: 1.3em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#logoSafetySheet {
+    width: 100%;
+}
